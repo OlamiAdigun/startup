@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Electrical</a></li>
+            <li><a href="#">Mechanical</a></li>
+            <li><a href="#">AutoCad Design</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="logo">Adiguntrenditech</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Electrical</a></li>
+            <li class="hideOnMobile"><a href="#">Mechanical</a></li>
+            <li class="hideOnMobile"><a href="#">Design</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Responsive Web</h1>
+    </header>
+    <div class="container">
+        <article class="grid-1">
+            <h2>one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Atque deleniti qui quaerat. Quas excepturi ex mollitia a 
+                tempora, corporis nulla rem fugit 
+            </p>
+        </article>
+        <article class="grid-1">
+            <h2>Two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Atque deleniti qui quaerat. Quas excepturi ex mollitia a 
+                tempora, corporis nulla rem fugit 
+            </p>
+        </article>
+        <article class="grid-1">
+            <h2>Three</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Atque deleniti qui quaerat. Quas excepturi ex mollitia a 
+                tempora, corporis nulla rem fugit 
+            </p>
+        </article>
+        <article class="grid-1">
+            <h2>one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Atque deleniti qui quaerat. Quas excepturi ex mollitia a 
+                tempora, corporis nulla rem fugit 
+            </p>
+        </article>
+        <article class="grid-1">
+            <h2>Two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Atque deleniti qui quaerat. Quas excepturi ex mollitia a 
+                tempora, corporis nulla rem fugit 
+            </p>
+        </article>
+        <article class="grid-1">
+            <h2>Three</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Atque deleniti qui quaerat. Quas excepturi ex mollitia a 
+                tempora, corporis nulla rem fugit 
+            </p>
+        </article>
+
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+</body>
+</html>
